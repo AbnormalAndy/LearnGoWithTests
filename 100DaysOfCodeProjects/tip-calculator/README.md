@@ -10,7 +10,7 @@ Instructions:
 
 - Thus everyone's share of the total bill is $30.00 plus a $3.60 tip.
 
-Learning Points: Scan(), Scanln(), and Scanf() do not take decimal inputs. Bufio package was utilized to take inputs requiring a decimal point.
+Learning Points: Scan(), Scanln(), and Scanf() do not take float inputs. Bufio package was utilized to take inputs requiring a decimal point.
 
 Types need to match for function parameters if a calculation between the two parameters takes place in the function. I wonder if a type conversion can be done in the function calculation to still take different type parameters.
 
