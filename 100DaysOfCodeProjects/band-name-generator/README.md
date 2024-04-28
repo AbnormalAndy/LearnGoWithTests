@@ -1,4 +1,4 @@
-Band Name Generator
+Band Name Generator v0.1
 
 1. Create a greeting for the program.
 
