@@ -53,14 +53,15 @@ Print: "Your score is 53."
 
 Test
 
-`Name1		Name2			Score
-Brad Pitt	Jennifer Aniston	73
-Prince William	Kate Middleton		67
-Ashton Kutcher	Mila Kunis		63
-Angela Yu	Jack Bauer		53
-David Beckham	Victoria Beckham	45
-Mario		Princess Peach		43
-Kanye West	Kim Kardashian		42
-Truth Truth	Love			94
-QA		Violin			02`
+| Name1 | Name2 | Score |
+| ------------- | ------------- | --- |
+| Brad Pitt		| Jennifer Aniston	| 73 |
+| Prince William	| Kate Middleton	| 67 |
+| Ashton Kutcher	| Mila Kunis		| 63 |
+| Angela Yu		| Jack Bauer		| 53 |
+| David Beckham		| Victoria Beckham	| 45 |
+| Mario			| Princess Peach	| 43 |
+| Kanye West		| Kim Kardashian	| 42 |
+| Truth Truth		| Love			| 94 |
+| QA			| Violin		| 02 |
 
