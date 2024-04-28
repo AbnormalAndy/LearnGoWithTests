@@ -54,7 +54,7 @@ Print: "Your score is 53."
 Test
 
 | Name1 | Name2 | Score |
-| ------------- | ------------- | --- |
+| ------------- | ------------- | :---: |
 | Brad Pitt		| Jennifer Aniston	| 73 |
 | Prince William	| Kate Middleton	| 67 |
 | Ashton Kutcher	| Mila Kunis		| 63 |
