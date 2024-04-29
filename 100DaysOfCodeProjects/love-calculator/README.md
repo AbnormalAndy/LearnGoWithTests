@@ -65,3 +65,16 @@ Test
 | Truth Truth		| Love			| 94 |
 | QA			| Violin		| 03 |
 
+
+Learning Point: Utilized table tests to test a variety of different cases. This was useful for the PrintStatement function to fully test the conditional statements.
+
+Learned ToLower and Count from the Strings package, which made counting the individual letters easy. Since this is not truly an addition of the firstNumber and secondNumber, there was a thought about practicing the process of converting the integers to strings, adding those strings, and then converting that string to an integer.
+
+Example: firstNumber = 5, secondNumber = 3 -> Convert 5 and 3 to "5" and "3". -> "5" + "3" = "53" -> Convert "53" to 53.
+
+However, this seemed to be overkill and would require an error check when converting the string back to an integer. An executive decision was made to take the firstNumber and multiply it by 10, which appeared to achieve the same solution.
+
+- Practiced setting up a project by creating a new go.mod file.
+- Practiced proper project organization, which involved creating a subdirectory for the main.go file.
+- Practiced creating and importing packages.
+
