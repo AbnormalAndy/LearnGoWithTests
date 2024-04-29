@@ -1,4 +1,4 @@
-#Love Calculator v0.1
+# Love Calculator v0.1
 
 Write a program that tests the compatibility between two people.
 
@@ -16,11 +16,11 @@ For Love Scores less than 10 or greater than 90, the message should be:
 
 For Love Scores between 40 and 50, the message should be:
 
-- "You score is *y*, you are alright together."
+- "Your score is *y*, you are alright together."
 
 Otherwise, the message will just be their score, e.g.:
 
-- "Your socre is *z*."
+- "Your score is *z*."
 
 e.g.
 
@@ -63,5 +63,5 @@ Test
 | Mario			| Princess Peach	| 43 |
 | Kanye West		| Kim Kardashian	| 42 |
 | Truth Truth		| Love			| 94 |
-| QA			| Violin		| 02 |
+| QA			| Violin		| 03 |
 
