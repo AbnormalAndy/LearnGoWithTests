@@ -22,9 +22,11 @@ func Buy(b Book) (Book, error) {
 	return b, nil 
 }
 
-func GetAllBooks(catalog map[int]Book) []Book {
+type Catalog map[int]Book
+
+func (c Catalog) GetAllBooks() []Book {
 	result := []Book{}
-	for _, b := range catalog {
+	for _, b := range c {
 		result = append(result, b)
 	}
 
