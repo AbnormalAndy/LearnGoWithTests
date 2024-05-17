@@ -24,7 +24,5 @@ Also, constrain the inputs to only take numbers from 0 to a MAX of 1000.
 
 702
 
-//TO-DO:
-- Error handle 0, less than 0, and greater than 1000.
-- Create / finish main.go, which should take the user input.
+Learning Point: If taking an integer as user input, can use fmt.Scanln - bufio / os are not required. To catch the error in main.go, needed to use an else statement with the if statement. The switch in addingevennumbers.go did not require an expression. Maybe could have combined the two invalid tests in addingevennumbers_test.go, but believe it is testing two different invalid behaviors so this may be ideal.
 
