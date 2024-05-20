@@ -28,11 +28,12 @@ Fizz
 14
 FizzBuzz
 
-To-Do:
-- Other behavior that can be implemented / tested?
+Improvements(?)
+- 0 is being "FizzBuzzed".
 
-- Make main.go.
+- Reduce conditional statements in main.go? Make more efficient?
 
-- Take user input?
+- Requires fmt.Printf to utilize \n. Different way to get a newline?
 
+Learning Point: Switch statements can be used instead of conditional statements. Still learning when one is better than the other in what circumstances. 
 
