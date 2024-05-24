@@ -33,16 +33,6 @@ func TestStringsBuilder(t *testing.T) {
 	}
 }
 
-//func TestMyBuilderLen(t *testing.T) {
-//	t.Parallel()
-//	var mb mytypes.MyBuilder
-//	want := 15
-//	got := mb.Len()
-//	if want != got {
-//		t.Errorf("Want %d; got %d.", want, got)
-//	}
-//}
-
 func TestMyBuilderHello(t *testing.T) {
 	t.Parallel()
 	var mb mytypes.MyBuilder
@@ -53,3 +43,13 @@ func TestMyBuilderHello(t *testing.T) {
 	}
 }
 
+func TestStringUppercaser(t *testing.T) {
+	t.Parallel()
+	var su mytypes.StringUppercaser
+	su.Contents.WriteString("Hello, Gophers!")
+	want := "HELLO, GOPHERS!"
+	got := su.ToUpper()
+	if want != got {
+		t.Errorf("Want %q; got %q.", want, got)
+	}
+}
