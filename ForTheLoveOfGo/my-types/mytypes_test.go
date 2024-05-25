@@ -53,3 +53,13 @@ func TestStringUppercaser(t *testing.T) {
 		t.Errorf("Want %q; got %q.", want, got)
 	}
 }
+
+func TestDouble(t *testing.T) {
+	t.Parallel()
+	var x int = 12
+	want := 24
+	mytypes.Double(&x)
+	if want != x {
+		t.Errorf("Want %d; got %d.", want, x)
+	}
+}
