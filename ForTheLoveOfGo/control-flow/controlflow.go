@@ -43,3 +43,19 @@ fmt.Println("Yay! That's a valid input.")
 return true
 
 
+// else Branches
+fmt.Println("Let's see what the sign of x is:")
+if x <= 0 {
+	fmt.Println("X is zero or negative.")
+} else {
+	fmt.Println("X is positive.")
+}
+fmt.Println("Well, that clears that up!")
+
+
+// Early return
+if x <= 0 {
+	fmt.Println("Nope, x is zero or negative.")
+	return false
+}
+
