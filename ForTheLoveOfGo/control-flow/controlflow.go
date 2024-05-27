@@ -59,3 +59,13 @@ if x <= 0 {
 	return false
 }
 
+
+// And, or, and not
+if x > 0 && x % 2 == 0 {
+	fmt.Println("Positive and Even")
+}
+
+if x > 0 || x % 2 == 0 {
+	fmt.Println("Positive or Even (or Both)")
+}
+
