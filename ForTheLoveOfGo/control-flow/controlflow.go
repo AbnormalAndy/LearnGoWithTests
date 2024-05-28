@@ -69,3 +69,40 @@ if x > 0 || x % 2 == 0 {
 	fmt.Println("Positive or Even (or Both)")
 }
 
+
+// bool Variables
+_, ok := menu["eggs"]
+if ok {
+	fmt.Println("Eggs are on the menu!")
+}
+
+
+// Compound if Statements
+if _, ok := menu["eggs"]; ok {
+	fmt.Println("Eggs are on the menu!")
+}
+
+//if STATEMENT; CONDITION {
+//	...
+//}
+
+if _, ok := menu["eggs"]; ok {
+	fmt.Println("Eggs are on the menu!")
+}
+fmt.Println(ok)
+// error: undefined: ok
+
+if err := doStuff(); err != nil {
+	fmt.Println("Oh no.")
+}
+
+if err := apply(func(x int) error {
+	if x <= 0 {
+		return errors.New("Prognosis negative.")
+	}
+	return nil
+}, -1); err != nil {
+	fmt.Println("Some error happened.")
+}
+
+
