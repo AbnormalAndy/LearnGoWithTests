@@ -18,4 +18,16 @@ case 3:
 	fmt.Println("three")
 }
 
+switch x {
+case 1, 2, 3:
+	fmt.Println("One, Two, or Three")
+}
+
+switch x {
+case 1:
+	if SomethingWentWrong() {
+		break
+	}
+	... // Otherwise carry on.
+}
 
