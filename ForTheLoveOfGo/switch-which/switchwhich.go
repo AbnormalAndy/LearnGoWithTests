@@ -58,4 +58,17 @@ for x < 10 {
 	x++
 }
 
+// Jumping to the Next Element with continue
+for _, e := range employees {
+	if e.IsCurrent {
+		e.PrintCheck()
+	}
+}
+
+for _, e := range employees {
+	if !e.IsCurrent {
+		continue
+	}
+	e.PrintCheck()
+}
 
