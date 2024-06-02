@@ -31,3 +31,16 @@ case 1:
 	... // Otherwise carry on.
 }
 
+
+// The for Keyword
+for x < 10 {
+	fmt.Println("X is less than 10.")
+	// Update X, perhaps.
+}
+
+
+// Using range to loop over collections.
+for range employees {
+	fmt.Println("Found another employee!")
+}
+
