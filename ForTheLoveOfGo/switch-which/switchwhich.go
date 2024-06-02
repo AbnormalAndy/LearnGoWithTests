@@ -44,3 +44,18 @@ for range employees {
 	fmt.Println("Found another employee!")
 }
 
+
+// Recieving index and element values from range.
+for i, e := range employees {
+	fmt.Println("Employee number %d: %v.", i, e)
+}
+
+
+// Conditional for Statements
+x := 0
+for x < 10 {
+	fmt.Println(x)
+	x++
+}
+
+
