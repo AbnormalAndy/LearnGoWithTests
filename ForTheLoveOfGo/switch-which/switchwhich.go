@@ -72,3 +72,23 @@ for _, e := range employees {
 	e.PrintCheck()
 }
 
+// Exiting loops with break
+for _, e := range employees {
+	if MoneyLeft() <= 0 {
+		fmt.Println("Oops, out of cash!")
+		break
+	}
+	// Otherwise, print check.
+}
+
+// Controlling nested loops with labels.
+outer:
+	for x := range 10 {
+		for y := range 10 {
+			fmt.Println(x, y)
+			if y == 5 {
+				break outer
+			}
+		}
+	}
+
