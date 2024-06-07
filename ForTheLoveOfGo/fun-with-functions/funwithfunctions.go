@@ -14,4 +14,11 @@ answer := 3 * (double(2.5) + 7)
 
 lat, long, err := location()
 
+// The defer Keyword
+f, err := os.Open("testdata/somefile.txt")
+if err != nil {
+	return err
+}
+defer f.Close()
+// Do stuff with f.
 
