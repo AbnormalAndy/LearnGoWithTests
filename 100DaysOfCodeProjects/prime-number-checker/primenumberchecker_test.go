@@ -10,6 +10,6 @@ func TestPrimeNumberChecker(t *testing.T) {
 	want := "It is a prime number."
 	got := primenumberchecker.PrimeNumberChecker(73)
 	if want != got {
-		t.Errorf("Want %s; got %s.", want, got)
+		t.Errorf("Want '%s'; got '%s'.", want, got)
 	}
 }
