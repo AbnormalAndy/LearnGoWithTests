@@ -5,22 +5,23 @@ import (
 	"testing"
 )
 
-func TestGradeProgram(t *testing.T) {
+func TestScores(t *testing.T) {
 	t.Parallel()
-	type testCase struct {
-		score	int
-		want	string
+	_ = gradingprogram.Scores{
+		Name:	"Hermione",
+		Score:	99,
 	}
-	testCases := []testCase{
-		{score: 92, want: "Outstanding"},
-		{score: 82, want: "Exceeds Expectations"},
-		{score: 72, want: "Acceptable"},
-		{score: 62, want: "Fail"},
+}
+
+func TestScoreToGrade(t *testing.T) {
+	t.Parallel()
+	g := gradingprogram.Scores{
+		Name:	"Harry",
+		Score:	81,
 	}
-	for _, tc := range testCases {
-		got := gradingprogram.GradeProgram(tc.score)
-		if tc.want != got {
-			t.Errorf("Score %d; Want %s; Got %s.", tc.score, tc.want, got)
-		}
+	want := "Exceeds Expectations"
+	got := gradingprogram.ScoreToGrade(g)
+	if want != got {
+		t.Errorf("Want %s; got %s.", want, got)
 	}
 }

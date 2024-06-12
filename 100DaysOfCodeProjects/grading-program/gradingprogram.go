@@ -1,12 +1,18 @@
 package gradingprogram
 
-func GradeProgram(score int) string {
+type Scores struct {
+	Name	string
+	Score	int
+}
+
+// This needs to take a struct.
+func ScoreToGrade(s Scores) string {
 	switch {
-	case score > 90:
+	case s.Score > 90:
 		return "Outstanding"
-	case score > 80:
+	case s.Score > 80:
 		return "Exceeds Expectations"
-	case score > 70:
+	case s.Score > 70:
 		return "Acceptable"
 	default:
 		return "Fail"
