@@ -13,6 +13,7 @@ func TestScores(t *testing.T) {
 	}
 }
 
+// Make a test case that tests all the ranges.
 func TestScoreToGrade(t *testing.T) {
 	t.Parallel()
 	g := gradingprogram.Scores{

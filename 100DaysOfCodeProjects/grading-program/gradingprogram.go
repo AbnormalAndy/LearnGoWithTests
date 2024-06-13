@@ -3,9 +3,10 @@ package gradingprogram
 type Scores struct {
 	Name	string
 	Score	int
+	Grade	string
 }
 
-// This needs to take a struct.
+// Intake an array of structs and out put the same array.
 func ScoreToGrade(s Scores) string {
 	switch {
 	case s.Score > 90:
