@@ -13,7 +13,8 @@ func TestScores(t *testing.T) {
 	}
 }
 
-// Make a test case that tests all the ranges.
+// To-Do 1: Intake a struct and output a struct.
+// To-Do 2: Make a test case that tests all the ranges.
 func TestScoreToGrade(t *testing.T) {
 	t.Parallel()
 	g := gradingprogram.Scores{
