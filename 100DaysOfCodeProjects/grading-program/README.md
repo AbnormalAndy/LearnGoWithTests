@@ -28,4 +28,6 @@ The scoring criteria:
     "Neville": "Fail",
 }`
 
-
+To-Do:
+- Intake a struct; output a struct?
+- Iterate through array, output a string and print?
