@@ -31,3 +31,4 @@ The scoring criteria:
 To-Do:
 - Intake a struct; output a struct?
 - Iterate through array, output a string and print?
+- Make cmd folder and main file.
