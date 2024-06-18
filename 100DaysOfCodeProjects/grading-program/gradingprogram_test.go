@@ -13,8 +13,6 @@ func TestScores(t *testing.T) {
 	}
 }
 
-// To-Do 1: Intake a struct and output a struct.
-// To-Do 2: Make a test case that tests all the ranges.
 func TestScoreToGrade(t *testing.T) {
 	t.Parallel()
 	g := gradingprogram.Student{
@@ -29,3 +27,5 @@ func TestScoreToGrade(t *testing.T) {
 		t.Errorf("Want %s; got %s.", want, got)
 	}
 }
+
+// Intake an array of students and output new array with student grades.
