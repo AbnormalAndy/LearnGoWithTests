@@ -28,8 +28,9 @@ The scoring criteria:
     "Neville": "Fail",
 }`
 
+Complete:
+- Intake a struct; output a change to the struct.
+
 To-Do:
-- Intake a struct; output a struct?
-- Iterate through array, output a string and print?
-- Make cmd folder and main file.
+- New behavior would be to iterate through an array of structs and call the function that changes the struct.
 
