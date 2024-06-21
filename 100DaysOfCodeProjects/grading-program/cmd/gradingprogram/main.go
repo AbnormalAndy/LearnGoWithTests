@@ -6,6 +6,12 @@ import (
 )
 
 func main() {
+	harry := gradingprogram.Student{
+		Name:	"Harry",
+		Score:	81,
+		Grade:	"",
+	}
+
 	ron := gradingprogram.Student{
 		Name:	"Ron",
 		Score:	78,
@@ -24,14 +30,17 @@ func main() {
 		Grade:	"",
 	}
 
+	fmt.Println(harry)
 	fmt.Println(ron)
 	fmt.Println(hermione)
 	fmt.Println(draco)
 
+	harrygrade := gradingprogram.ScoreToGrade(harry)
 	rongrade := gradingprogram.ScoreToGrade(ron)
 	hermionegrade := gradingprogram.ScoreToGrade(hermione)
 	dracograde := gradingprogram.ScoreToGrade(draco)
 
+	fmt.Println(harrygrade)
 	fmt.Println(rongrade)
 	fmt.Println(hermionegrade)
 	fmt.Println(dracograde)
