@@ -30,18 +30,27 @@ func main() {
 		Grade:	"",
 	}
 
+	neville := gradingprogram.Student{
+		Name:	"Neville",
+		Score:	62,
+		Grade:	"",
+	}
+
 	fmt.Println(harry)
 	fmt.Println(ron)
 	fmt.Println(hermione)
 	fmt.Println(draco)
+	fmt.Println(neville)
 
 	harrygrade := gradingprogram.ScoreToGrade(harry)
 	rongrade := gradingprogram.ScoreToGrade(ron)
 	hermionegrade := gradingprogram.ScoreToGrade(hermione)
 	dracograde := gradingprogram.ScoreToGrade(draco)
+	nevillegrade := gradingprogram.ScoreToGrade(neville)
 
 	fmt.Println(harrygrade)
 	fmt.Println(rongrade)
 	fmt.Println(hermionegrade)
 	fmt.Println(dracograde)
+	fmt.Println(nevillegrade)
 }
