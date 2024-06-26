@@ -38,13 +38,19 @@ func main() {
 
 	freddie := gradingprogram.Student{
 		Name:	"Freddie",
-		Score:	0,
+		Score:	13,
 		Grade:	"",
 	}
 
 	perfect := gradingprogram.Student{
 		Name:	"Perfect",
 		Score:	100,
+		Grade:	"",
+	}
+
+	zero := gradingprogram.Student{
+		Name:	"Zero",
+		Score:	0,
 		Grade:	"",
 	}
 
@@ -55,6 +61,7 @@ func main() {
 	fmt.Println(neville)
 	fmt.Println(freddie)
 	fmt.Println(perfect)
+	fmt.Println(zero)
 
 	harrygrade := gradingprogram.ScoreToGrade(harry)
 	rongrade := gradingprogram.ScoreToGrade(ron)
@@ -63,6 +70,7 @@ func main() {
 	nevillegrade := gradingprogram.ScoreToGrade(neville)
 	freddiegrade := gradingprogram.ScoreToGrade(freddie)
 	perfectgrade := gradingprogram.ScoreToGrade(perfect)
+	zerograde := gradingprogram.ScoreToGrade(zero)
 
 	fmt.Println(harrygrade)
 	fmt.Println(rongrade)
@@ -71,4 +79,5 @@ func main() {
 	fmt.Println(nevillegrade)
 	fmt.Println(freddiegrade)
 	fmt.Println(perfectgrade)
+	fmt.Println(zerograde)
 }
