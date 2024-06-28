@@ -6,60 +6,61 @@ import (
 )
 
 func main() {
-	harry := gradingprogram.Student{
-		Name:	"Harry",
-		Score:	81,
-		Grade:	"",
+	students := []gradingprogram.Student{
+		{
+			Name:	"Harry",
+			Score:	81,
+			Grade:	"",
+		},
+		{
+			Name:	"Ron",
+			Score:	78,
+			Grade: "",
+		},
+		{
+			Name:	"Hermione",
+			Score:	99,
+			Grade:	"",
+		},
+		{
+			Name:	"Draco",
+			Score:	74,
+			Grade:	"",
+		},
+		{
+			Name:	"Neville",
+			Score:	62,
+			Grade:	"",
+		},
+		{
+			Name:	"Freddie",
+			Score:	13,
+			Grade:	"",
+		},
+		{
+			Name:	"Perfect",
+			Score:	100,
+			Grade:	"",
+		},
+		{
+			Name:	"Zero",
+			Score:	0,
+			Grade:	"",
+		},
+		{
+			Name:	"Negative",
+			Score:	-1,
+			Grade:	"",
+		},
 	}
 
-	ron := gradingprogram.Student{
-		Name:	"Ron",
-		Score:	78,
-		Grade: "",
+	// Perhaps put results in another array?
+	for i := 0; i < len(students); i++ {
+		fmt.Println(students[i])
+		fmt.Println(gradingprogram.ScoreToGrade(students[i]))
 	}
 
-	hermione := gradingprogram.Student{
-		Name:	"Hermione",
-		Score:	99,
-		Grade:	"",
-	}
-
-	draco := gradingprogram.Student{
-		Name:	"Draco",
-		Score:	74,
-		Grade:	"",
-	}
-
-	neville := gradingprogram.Student{
-		Name:	"Neville",
-		Score:	62,
-		Grade:	"",
-	}
-
-	freddie := gradingprogram.Student{
-		Name:	"Freddie",
-		Score:	13,
-		Grade:	"",
-	}
-
-	perfect := gradingprogram.Student{
-		Name:	"Perfect",
-		Score:	100,
-		Grade:	"",
-	}
-
-	zero := gradingprogram.Student{
-		Name:	"Zero",
-		Score:	0,
-		Grade:	"",
-	}
-
-	negative := gradingprogram.Student{
-		Name:	"Negative",
-		Score:	-1,
-		Grade:	"",
-	}
-
+	/*
 	fmt.Println(harry)
 	fmt.Println(ron)
 	fmt.Println(hermione)
@@ -89,4 +90,5 @@ func main() {
 	fmt.Println(perfectgrade)
 	fmt.Println(zerograde)
 	fmt.Println(negativegrade)
+	*/
 }
