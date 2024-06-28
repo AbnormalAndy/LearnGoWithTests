@@ -32,5 +32,5 @@ Complete:
 - Intake a struct; output a change to the struct.
 
 To-Do:
-- New behavior would be to iterate through an array of structs and call the function that changes the struct.
+- Test for 0 and negative number.
 
