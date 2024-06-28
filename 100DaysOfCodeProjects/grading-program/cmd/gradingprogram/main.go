@@ -54,41 +54,11 @@ func main() {
 		},
 	}
 
-	// Perhaps put results in another array?
-	for i := 0; i < len(students); i++ {
-		fmt.Println(students[i])
-		fmt.Println(gradingprogram.ScoreToGrade(students[i]))
+	fmt.Println(students)
+
+	for i := range students {
+		students[i] = gradingprogram.ScoreToGrade(students[i]) 
 	}
 
-	/*
-	fmt.Println(harry)
-	fmt.Println(ron)
-	fmt.Println(hermione)
-	fmt.Println(draco)
-	fmt.Println(neville)
-	fmt.Println(freddie)
-	fmt.Println(perfect)
-	fmt.Println(zero)
-	fmt.Println(negative)
-
-	harrygrade := gradingprogram.ScoreToGrade(harry)
-	rongrade := gradingprogram.ScoreToGrade(ron)
-	hermionegrade := gradingprogram.ScoreToGrade(hermione)
-	dracograde := gradingprogram.ScoreToGrade(draco)
-	nevillegrade := gradingprogram.ScoreToGrade(neville)
-	freddiegrade := gradingprogram.ScoreToGrade(freddie)
-	perfectgrade := gradingprogram.ScoreToGrade(perfect)
-	zerograde := gradingprogram.ScoreToGrade(zero)
-	negativegrade := gradingprogram.ScoreToGrade(negative)
-
-	fmt.Println(harrygrade)
-	fmt.Println(rongrade)
-	fmt.Println(hermionegrade)
-	fmt.Println(dracograde)
-	fmt.Println(nevillegrade)
-	fmt.Println(freddiegrade)
-	fmt.Println(perfectgrade)
-	fmt.Println(zerograde)
-	fmt.Println(negativegrade)
-	*/
+	fmt.Println(students)
 }
