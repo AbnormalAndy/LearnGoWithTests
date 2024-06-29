@@ -33,6 +33,11 @@ func main() {
 			Grade:	"",
 		},
 		{
+			Name:	"Mikko",
+			Score:	90,
+			Grade:	"",
+		},
+		{
 			Name:	"Freddie",
 			Score:	13,
 			Grade:	"",
