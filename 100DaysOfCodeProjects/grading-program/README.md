@@ -28,9 +28,4 @@ The scoring criteria:
     "Neville": "Fail",
 }`
 
-Complete:
-- Intake a struct; output a change to the struct.
-
-To-Do:
-- Test for 0 and negative number.
 
