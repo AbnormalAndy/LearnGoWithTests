@@ -28,11 +28,6 @@ func main() {
 			Grade:	"",
 		},
 		{
-			Name:	"Freddie",
-			Score:	13,
-			Grade:	"",
-		},
-		{
 			Name:	"Perfect",
 			Score:	100,
 			Grade:	"",
