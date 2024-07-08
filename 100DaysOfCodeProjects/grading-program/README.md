@@ -31,6 +31,5 @@ The scoring criteria:
 Future To-Do:
 - Make a test for zero.
 - Make a test for negative.
-- Make function for structure loop.
 
 
