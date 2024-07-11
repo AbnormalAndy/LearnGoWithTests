@@ -42,4 +42,6 @@ To-Do:
 -- If leap, add +1 to 28.
 - Print to Returns
 
+Learning Moment: Moved slice from outside the function into the DaysInMonth function. While the slice was outside the function, the DaysInMonth function would modify the slice permanently by adding 1 when LeapYear was true.
 
+Unsure at this time how to dereference or simply point to the original slice and not permanently modify the slice when it was outside the DaysInMonth function.
