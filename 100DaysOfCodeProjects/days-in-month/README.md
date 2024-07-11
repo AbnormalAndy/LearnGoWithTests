@@ -37,6 +37,9 @@ days = days_in_month(year, month)
 To-Do:
 - Convert is_leap() to Golang
 - Determine Leap Year
+-- Utilize month_days to get the days in each month.
+-- Figure out if year is a leap year, which will call is a leap year.
+-- If leap, add +1 to 28.
 - Print to Returns
 
 
