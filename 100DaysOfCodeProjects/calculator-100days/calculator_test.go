@@ -7,10 +7,9 @@ import (
 
 func TestAdd(t *testing.T) {
 	t.Parallel()
-	input := calculator.Add(2, 4)
-	got := input
-	want := 6
+	want := 6.0
+	got := calculator.Add(2.0, 4.0)
 	if got != want {
-		t.Errorf("Input: %d; Got: %d; Want: %d.", input, got, want)
+		t.Errorf("Got: %f; Want: %f.", got, want)
 	}
 }
