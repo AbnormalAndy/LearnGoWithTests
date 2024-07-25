@@ -19,6 +19,15 @@ func TestSubtract(t *testing.T) {
 	want := 13.0
 	got := calculator.Subtract(15.0, 2.0)
 	if got != want {
-		t.Errorf("Got: %f; want %f.", got, want)
+		t.Errorf("Got: %f; want: %f.", got, want)
+	}
+}
+
+func TestMultiply(t *testing.T) {
+	t.Parallel()
+	want := 20.0
+	got := calculator.Multiply(4.0, 5.0)
+	if got != want {
+		t.Errorf("Got: %f; want: %f.", got, want)
 	}
 }
