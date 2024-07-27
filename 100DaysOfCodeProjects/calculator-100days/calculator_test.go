@@ -61,3 +61,22 @@ func TestMultiply(t *testing.T) {
 		}
 	}
 }
+
+func TestDivide(t *testing.T) {
+	t.Parallel()
+	type testCase struct {
+		a, b float64
+		want float64
+	}
+	testCases := []testCase{
+		{a: 10, b: 5, want: 2},
+		{a: 9, b: 3, want: 3},
+		{a: 8, b: 2, want: 4},
+	}
+	for _, tc := range testCases {
+		got := calculator.Divide(tc.a, tc.b)
+		if tc.want != got {
+			t.Errorf("Want: %f; got: %f.", tc.want, got)
+		}
+	}
+}
