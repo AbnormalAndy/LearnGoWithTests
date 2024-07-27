@@ -74,9 +74,20 @@ func TestDivide(t *testing.T) {
 		{a: 8, b: 2, want: 4},
 	}
 	for _, tc := range testCases {
-		got := calculator.Divide(tc.a, tc.b)
+		got, err := calculator.Divide(tc.a, tc.b)
+		if err != nil {
+			t.Fatalf("Want no error for valid input; got %v.", err)
+		}
 		if tc.want != got {
 			t.Errorf("Want: %f; got: %f.", tc.want, got)
 		}
+	}
+}
+
+func TestDivideInvalid(t *testing.T) {
+	t.Parallel()
+	_, err := calculator.Divide(1, 0)
+	if err == nil {
+		t.Error("Want error for invalid input; got nil.")
 	}
 }
