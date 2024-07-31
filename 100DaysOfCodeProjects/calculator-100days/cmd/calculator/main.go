@@ -32,7 +32,7 @@ func main() {
 	for quit != true {
 
 		// Ask for the second number.
-		fmt.Println("What is the second number?\n")
+		fmt.Println("What is another number?\n")
 		inputReaderTwo := bufio.NewReader(os.Stdin)
 		secondNumberInput, err := inputReaderTwo.ReadString('\n')
 		if err != nil {
@@ -60,9 +60,9 @@ func main() {
 		case operator == "/":
 			sum, _ = calculator.Divide(firstNumber, secondNumber)
 		}
+
 		fmt.Printf("Sum: %.2f.\n", sum)
 
-		
 		var calculateMore string
 
 		fmt.Println("Would you like to continue? Yes or No\n")
