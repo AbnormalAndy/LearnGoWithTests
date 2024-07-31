@@ -67,12 +67,12 @@ func main() {
 
 		fmt.Println("Would you like to continue? Yes or No\n")
 		fmt.Scanln(&calculateMore)
+		
+		calculateMore = strings.ToLower(calculateMore)
 
-		if strings.ToLower(calculateMore) == "no" || strings.ToLower(calculateMore) == "n" {
+		if calculateMore == "no" || calculateMore == "n" {
 			quit = true
-		}
-
-		if strings.ToLower(calculateMore) != "yes" || strings.ToLower(calculateMore) == "y" {
+		} else if calculateMore != "yes" || calculateMore == "y" {
 			fmt.Println("Did not enter 'Yes' or 'No'.")
 			quit = true
 		}
