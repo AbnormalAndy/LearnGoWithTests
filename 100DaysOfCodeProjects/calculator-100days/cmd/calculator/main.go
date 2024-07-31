@@ -11,6 +11,7 @@ import (
 
 func main() {
 
+
 	// Ask for the first number.
 	fmt.Println("What is the first number?\n")
 	inputReaderOne := bufio.NewReader(os.Stdin)
@@ -24,12 +25,14 @@ func main() {
 		fmt.Println(err)
 	}
 
-	
+
 	sum := 0.0
 
 	quit := false
 
+
 	for quit != true {
+
 
 		// Ask for the second number.
 		fmt.Println("What is another number?\n")
@@ -43,6 +46,7 @@ func main() {
 		if err != nil {
 			fmt.Println(err)
 		}
+
 
 		var operator string 
 
@@ -61,7 +65,9 @@ func main() {
 			sum, _ = calculator.Divide(firstNumber, secondNumber)
 		}
 
+
 		fmt.Printf("Sum: %.2f.\n", sum)
+
 
 		var calculateMore string
 
@@ -76,6 +82,7 @@ func main() {
 			fmt.Println("Did not enter 'Yes' or 'No'.")
 			quit = true
 		}
+
 
 		firstNumber = sum
 	}
