@@ -7,4 +7,6 @@ Pick an operation: +
 What's the next number? 3
 Type 'y' to continue calculating with 10.0, or type 'n' to start a new calculation:
 
+To-Do
+- Switch versus conditional statement to continue calculating or quit the program.
 
