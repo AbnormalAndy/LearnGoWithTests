@@ -5,6 +5,7 @@ import (
 )
 
 // Adds two cards together but, if the sum is more than 21, will try convert an Ace to a 1.
+// Convert to intaking a slice.
 func AddCards(cardOne, cardTwo int) int {
 	sum := cardOne + cardTwo
 

@@ -30,7 +30,15 @@ Lose Condition:
 
 AddCards Function:
 - Easy to sum two cards. Decided to utilize conditional expression to evaluate whether an ace should be converted to a one. A pitfall could be that this function only intakes two cards.
+- Perhaps convert to intaking a slice. Iterate through the slice for 11's to convert to 1's if necessary.
 
 DealCard Function:
 - Not sure how to test the randomness of this function. Not sure if the randomness should be tested. Instead, evaluated intake of a deck size of 13 (an array) and returning an integer.
+
+
+To-Do:
+- Convert AddCards function to intake a slice.
+- May need to adjust conditional statement.
+    - Could take a total and, if greater than 21, iterate to find an 11 and make it a 1.
+- DrawCard should append to a slice that is the computer and player hands in main.go file.
 
