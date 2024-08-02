@@ -29,8 +29,9 @@ Lose Condition:
 
 
 AddCards Function:
-- Easy to sum two cards. Decided to utilize conditional expression to evaluate whether an ace should be converted to a one. A pitfall could be that this function only intakes two cards.
-- Perhaps convert to intaking a slice. Iterate through the slice for 11's to convert to 1's if necessary.
+- Converted to intaking a slice.
+- TO-DO: Utilize conditional expression to evaluate whether an ace should be converted to a one.
+- TO-DO: Iterate through the slice for 11's to convert to 1's if necessary?
 
 DealCard Function:
 - Not sure how to test the randomness of this function. Not sure if the randomness should be tested. Instead, evaluated intake of a deck size of 13 (an array) and returning an integer.
