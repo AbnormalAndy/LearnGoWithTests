@@ -27,3 +27,12 @@ func TestAddCards(t *testing.T) {
 	}
 }
 
+func TestDealCard(t *testing.T) {
+	t.Parallel()
+	deck := [13]int{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+	want := 1
+	got := blackjack.DealCard(deck)
+	if want != got {
+		t.Errorf("Want: %d; got: %d.", want, got)
+	}
+}
