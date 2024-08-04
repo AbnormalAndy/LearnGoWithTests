@@ -31,7 +31,8 @@ Lose Condition:
 AddCards Function:
 - TO-DO: Utilize conditional expression to evaluate whether an ace should be converted to a one.
 - TO-DO: Iterate through the slice for 11's to convert to 1's if necessary?
-    - Conveting all 11's when should only convert 11's as necessary.
+    - Converts all 11's when should only convert 11's as necessary.
+    - Last test fails because of this; will display want 12, got 2.
 
 DealCard Function:
 - Not sure how to test the randomness of this function. Not sure if the randomness should be tested. Instead, evaluated intake of a deck size of 13 (an array) and returning an integer.
