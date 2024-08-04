@@ -29,7 +29,6 @@ Lose Condition:
 
 
 AddCards Function:
-- Converted to intaking a slice.
 - TO-DO: Utilize conditional expression to evaluate whether an ace should be converted to a one.
 - TO-DO: Iterate through the slice for 11's to convert to 1's if necessary?
 

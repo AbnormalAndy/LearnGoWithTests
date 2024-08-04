@@ -13,6 +13,10 @@ func AddCards(hand []int) int {
 		sum += hand[i]
 	}
 
+	if sum > 21 {
+		return 0
+	}
+
 	/*
 	if sum > 21 && cardOne == 11 {
 		return 1 + cardTwo
