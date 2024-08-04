@@ -18,6 +18,8 @@ func TestAddCards(t *testing.T) {
 		{a: []int{11, 13}, want: 14},
 		{a: []int{15, 11}, want: 16},
 		{a: []int{11, 11}, want: 12},
+		{a: []int{11, 11, 9}, want: 21},
+		{a: []int{11, 11, 11}, want: 13},
 	}
 	for _, tc := range testCases {
 		got := blackjack.AddCards(tc.a)
