@@ -15,6 +15,7 @@ func main() {
 
 	dealerHand = append(dealerHand, blackjack.DealCard(deck))
 	fmt.Println(dealerHand)
+	// TO-DO: Reveal only first number from the hand.
 	fmt.Printf("Dealer's hand: %v.\n\n", dealerHand)
 
 	dealerSum := 0
@@ -30,13 +31,18 @@ func main() {
 		fmt.Printf("Dealer's sum: %d.\n\n", dealerSum)
 	}
 
-	// TO-DO: Code the player hand and input.
-	/*
-	playerCardOne := blackjack.DealCard(deck)
-	playerCardTwo := blackjack.DealCard(deck)
-	fmt.Printf("Player's card one: %d; card two: %d.\n", playerCardOne, playerCardTwo)
+	// TO-DO: Code the input.
+	var playerHand []int
+	
+	playerHand = append(playerHand, blackjack.DealCard(deck))
+	fmt.Println(playerHand)
 
-	playerSum := blackjack.AddCards(playerCardOne, playerCardTwo)
+	playerHand = append(playerHand, blackjack.DealCard(deck))
+	fmt.Println(playerHand)
+	fmt.Printf("Player's hand: %v.\n\n", playerHand)
+
+	playerSum := 0
+
+	playerSum = blackjack.AddCards(playerHand)
 	fmt.Printf("Player's sum: %d.\n\n", playerSum)
-	*/
 }
