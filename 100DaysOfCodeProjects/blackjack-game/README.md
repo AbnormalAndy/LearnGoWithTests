@@ -39,14 +39,15 @@ To-Do:
 - Computer can finish hand immediately.
     - Print results in stages when revealing after player's hand.
     - Will have to count the length of the `computerHand` slice to get an accurate print out.
+        - Evaluate length and have switch statement for each print out.
     - May not be able to print the hand all at once?
 
 - Take player input: "Hit / H" and "Stay / S".
     - If player goes over a sum of 21, should instantly lose.
     - Display the computer's hand after an instant loss?
 
-- Make a separate function to evaluate winner?
-    - Compare computer's hand versus player's hand.
-    - Would return string.
-    - Easier to just do in main.go file?
+- Move win/loss evaluation switch to function in blackjack.go file?
+    - Would be able to test all cases appropriately.
+    - Would intake `playerSum` and `dealerSum` as arguments and return a true/false?
+    - Would utilize the true/false in main.go file to then print respective hands and hand sums.
 
