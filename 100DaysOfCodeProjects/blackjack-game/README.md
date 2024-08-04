@@ -36,5 +36,17 @@ DealCard Function:
 - Not sure how to test the randomness of this function. Not sure if the randomness should be tested. Instead, evaluated intake of a deck size of 13 (an array) and returning an integer.
 
 To-Do:
-- DrawCard should append to a slice that is the computer and player hands in main.go file.
+- Computer can finish hand immediately.
+    - Print results in stages when revealing after player's hand.
+    - Will have to count the length of the `computerHand` slice to get an accurate print out.
+    - May not be able to print the hand all at once?
+
+- Take player input: "Hit / H" and "Stay / S".
+    - If player goes over a sum of 21, should instantly lose.
+    - Display the computer's hand after an instant loss?
+
+- Make a separate function to evaluate winner?
+    - Compare computer's hand versus player's hand.
+    - Would return string.
+    - Easier to just do in main.go file?
 
