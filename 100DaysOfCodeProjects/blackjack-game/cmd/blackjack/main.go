@@ -48,4 +48,26 @@ func main() {
 
 	// TO-DO: Begin code to take user input here.
 	// TO-DO: Evaluate "Hit / H" and "Stay / S" commands.
+
+
+	// Perhaps move this to blackjack.go file to test all cases appropriately?
+	switch {
+		case playerSum == 21:
+			fmt.Printf("You win!\n")
+			fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
+			fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+		case dealerSum == 21:
+			fmt.Printf("You lose!\n")
+			fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
+			fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+		case playerSum > dealerSum && playerSum <= 21 || dealerSum > 21:
+			fmt.Printf("You win!\n")
+			fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
+			fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+		case dealerSum > playerSum && dealerSum <= 21 || playerSum > 21:
+			fmt.Printf("You lose!\n")
+			fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
+			fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+		}
+
 }
