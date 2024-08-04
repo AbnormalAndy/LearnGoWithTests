@@ -32,7 +32,6 @@ func main() {
 	}
 
 
-	// TO-DO: Code the input.
 	var playerHand []int
 	
 	playerHand = append(playerHand, blackjack.DealCard(deck))
@@ -46,4 +45,7 @@ func main() {
 
 	playerSum = blackjack.AddCards(playerHand)
 	fmt.Printf("Player's sum: %d.\n\n", playerSum)
+
+	// TO-DO: Begin code to take user input here.
+	// TO-DO: Evaluate "Hit / H" and "Stay / S" commands.
 }
