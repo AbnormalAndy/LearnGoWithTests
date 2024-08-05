@@ -52,6 +52,7 @@ func TestEvaluateWinner(t *testing.T) {
 		{a: 19, b: 20, want: false},
 		{a: 17, b: 25, want: true},
 		{a: 24, b: 17, want: false},
+		{a: 26, b: 24, want: false},
 	}
 	for _, tc := range testCases {
 		got := blackjack.EvaluateWinner(tc.a, tc.b)

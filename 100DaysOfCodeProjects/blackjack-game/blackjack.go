@@ -40,9 +40,9 @@ func EvaluateWinner(player, dealer int) bool {
 		return true
 	case dealer == 21:
 		return false
-	case player > dealer && player <= 21 || dealer > 21:
+	case player > dealer && player <= 21 || dealer > 21 && player <= 21:
 		return true
-	case dealer > player && dealer <= 21 || player > 21:
+	case dealer > player && dealer <= 21 || player > 21 && dealer <= 21:
 		return false
 	default:
 		return false
