@@ -38,3 +38,26 @@ func TestDealCard(t *testing.T) {
 		t.Errorf("Want: %d; got: %d.", want, got)
 	}
 }
+
+func TestEvaluateWinner(t *testing.T) {
+	t.Parallel()
+	type testCase struct {
+		a, b	int
+		want	bool
+	}
+	testCases := []testCase{
+		{a: 21, b: 21, want: true},
+		{a: 20, b: 21, want: false},
+		{a: 20, b: 19, want: true},
+		{a: 19, b: 20, want: false},
+		{a: 17, b: 25, want: true},
+		{a: 24, b: 17, want: false},
+	}
+	for _, tc := range testCases {
+		got := blackjack.EvaluateWinner(tc.a, tc.b)
+		if tc.want != got {
+			t.Errorf("Player sum: %d; Dealer sum: %d; want: %v; got: %v.", tc.a, tc.b, tc.want, got)
+		}
+	}
+}
+

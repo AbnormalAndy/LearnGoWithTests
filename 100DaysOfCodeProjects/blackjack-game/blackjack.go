@@ -32,3 +32,19 @@ func DealCard(deckOne [13]int) int {
 	randomCard := rand.Intn(len(deckOne))
 	return deckOne[randomCard]
 }
+
+// Intakes player and dealer sums and returns true if player wins.
+func EvaluateWinner(player, dealer int) bool {
+	switch {
+	case player == 21:
+		return true
+	case dealer == 21:
+		return false
+	case player > dealer && player <= 21 || dealer > 21:
+		return true
+	case dealer > player && dealer <= 21 || player > 21:
+		return false
+	default:
+		return false
+	}
+}

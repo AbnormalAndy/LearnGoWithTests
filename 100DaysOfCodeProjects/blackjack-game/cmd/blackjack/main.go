@@ -50,7 +50,20 @@ func main() {
 	// TO-DO: Evaluate "Hit / H" and "Stay / S" commands.
 
 
+	// This saves 8 lines of code.
+	if blackjack.EvaluateWinner(playerSum, dealerSum) {
+		fmt.Printf("You win!\n")
+		fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
+		fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+	} else {
+		fmt.Printf("You lose!\n")
+		fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
+		fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+	}
+
+
 	// Perhaps move this to blackjack.go file to test all cases appropriately?
+	/*	
 	switch {
 		case playerSum == 21:
 			fmt.Printf("You win!\n")
@@ -69,5 +82,5 @@ func main() {
 			fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
 			fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
 		}
-
+	*/
 }
