@@ -72,9 +72,7 @@ func main() {
 		}
 	}
 
-
 	// This saves 8 lines of code.
-	// BUG: If both hands are above 21, the player wins.
 	if blackjack.EvaluateWinner(playerSum, dealerSum) {
 		fmt.Printf("You win!\n")
 		fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
