@@ -47,30 +47,34 @@ func main() {
 	playerSum = blackjack.AddCards(playerHand)
 	fmt.Printf("Player's sum: %d.\n\n", playerSum)
 
-	// TO-DO: Begin code to take user input here.
-	// TO-DO: Evaluate "Hit / H" and "Stay / S" commands.
 	finishHand := false
 
+	// Asks if the player would like to continue playing.
 	for finishHand != true {
 		if playerSum > 21 {
 			break
 		}
 
 		var playerDecision string
+		
 		fmt.Printf("Your card total is: %d.\n\n", playerSum)
 		fmt.Println("Would you like to Hit ('H') or Stay ('S')?\n")
+
 		fmt.Scanln(&playerDecision)
+
 		playerDecision = strings.ToLower(playerDecision)
 
 		if playerDecision == "hit" || playerDecision == "h" {
 			playerHand = append(playerHand, blackjack.DealCard(deck))
 			playerSum = blackjack.AddCards(playerHand)
+
 			fmt.Printf("Player's hand: %v.\n\n", playerHand)
 			fmt.Printf("Player's sum: %d.\n\n", playerSum)
 		} else {
 			finishHand = true
 		}
 	}
+
 
 	// This saves 8 lines of code.
 	if blackjack.EvaluateWinner(playerSum, dealerSum) {
