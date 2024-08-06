@@ -7,45 +7,56 @@ import (
 )
 
 func main() {
+	greeting := `
+	 ____  _     ____  ____  _  __    _  ____  ____  _  __  
+	/  __\/ \   /  _ \/   _\/ |/ /   / |/  _ \/   _\/ |/ /  
+	| | //| |   | / \||  /  |   /    | || / \||  /  |   /   
+	| |_\\| |_/\| |-|||  \_ |   \ /\_| || |-|||  \_ |   \   
+	\____/\____/\_/ \|\____/\_|\_\\____/\_/ \|\____/\_|\_\
+
+	`
+
+	fmt.Println(greeting)
+
 	deck := [13]int{11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10}
 
 	var dealerHand []int
 	
 	dealerHand = append(dealerHand, blackjack.DealCard(deck))
-	fmt.Println(dealerHand)
+	// fmt.Println(dealerHand)
 
 	dealerHand = append(dealerHand, blackjack.DealCard(deck))
-	fmt.Println(dealerHand)
+	// fmt.Println(dealerHand)
 	// TO-DO: Reveal only first number from the hand.
-	fmt.Printf("Dealer's hand: %d and X.\n\n", dealerHand[0])
+	fmt.Printf("DEALER hand: %d and X.\n\n", dealerHand[0])
 
 	dealerSum := 0
 
 	dealerSum = blackjack.AddCards(dealerHand)
-	fmt.Printf("Dealer's sum: %d.\n\n", dealerSum)
+	// fmt.Printf("Dealer's sum: %d.\n\n", dealerSum)
 
 	for dealerSum < 17 {
 		dealerHand = append(dealerHand, blackjack.DealCard(deck))
-		fmt.Printf("Dealer's hand: %v.\n\n", dealerHand)
+		// fmt.Printf("Dealer's hand: %v.\n\n", dealerHand)
 
 		dealerSum = blackjack.AddCards(dealerHand)	
-		fmt.Printf("Dealer's sum: %d.\n\n", dealerSum)
+		// fmt.Printf("Dealer's sum: %d.\n\n", dealerSum)
 	}
 
 
 	var playerHand []int
 	
 	playerHand = append(playerHand, blackjack.DealCard(deck))
-	fmt.Println(playerHand)
+	// fmt.Println(playerHand)
 
 	playerHand = append(playerHand, blackjack.DealCard(deck))
-	fmt.Println(playerHand)
-	fmt.Printf("Player's hand: %v.\n\n", playerHand)
+	// fmt.Println(playerHand)
+	fmt.Printf("YOUR hand: %v.\n", playerHand)
 
 	playerSum := 0
 
 	playerSum = blackjack.AddCards(playerHand)
-	fmt.Printf("Player's sum: %d.\n\n", playerSum)
+	// fmt.Printf("Player's sum: %d.\n\n", playerSum)
 
 	finishHand := false
 
@@ -57,7 +68,7 @@ func main() {
 
 		var playerDecision string
 		
-		fmt.Printf("Your card total is: %d.\n\n", playerSum)
+		fmt.Printf("\nYOUR card total is: %d.\n\n", playerSum)
 		fmt.Println("Would you like to Hit ('H') or Stay ('S')?\n")
 
 		fmt.Scanln(&playerDecision)
@@ -68,8 +79,8 @@ func main() {
 			playerHand = append(playerHand, blackjack.DealCard(deck))
 			playerSum = blackjack.AddCards(playerHand)
 
-			fmt.Printf("Player's hand: %v.\n\n", playerHand)
-			fmt.Printf("Player's sum: %d.\n\n", playerSum)
+			fmt.Printf("\nYOUR hand: %v.\n", playerHand)
+			fmt.Printf("YOUR sum: %d.\n", playerSum)
 		} else {
 			finishHand = true
 		}
@@ -78,13 +89,17 @@ func main() {
 
 	// This saves 8 lines of code.
 	if blackjack.EvaluateWinner(playerSum, dealerSum) {
-		fmt.Printf("You win!\n")
-		fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
-		fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+		fmt.Printf("\nYou WIN!\n\n")
+		fmt.Printf("YOUR hand: %v.\n", playerHand)
+		fmt.Printf("YOUR sum: %d.\n\n", playerSum)
+		fmt.Printf("DEALER hand: %v.\n", dealerHand) 
+		fmt.Printf("DEALER sum: %d.\n\n", dealerSum)
 	} else {
-		fmt.Printf("You lose!\n")
-		fmt.Printf("Player hand: %v. Player sum: %d.\n", playerHand, playerSum)
-		fmt.Printf("Computer hand: %v. Dealer sum: %d.\n", dealerHand, dealerSum)
+		fmt.Printf("\nYou LOSE!\n\n")
+		fmt.Printf("YOUR hand: %v.\n", playerHand)
+		fmt.Printf("YOUR sum: %d.\n\n", playerSum)
+		fmt.Printf("DEALER hand: %v.\n", dealerHand) 
+		fmt.Printf("DEALER sum: %d.\n\n", dealerSum)
 	}
 
 }
