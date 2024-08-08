@@ -87,7 +87,6 @@ func main() {
 	}
 
 
-	// This saves 8 lines of code.
 	if blackjack.EvaluateWinner(playerSum, dealerSum) {
 		fmt.Printf("\nYou WIN!\n\n")
 		fmt.Printf("YOUR hand: %v.\n", playerHand)
