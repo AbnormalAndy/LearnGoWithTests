@@ -47,3 +47,8 @@ To-Do:
         - Evaluate length and have switch statement for each print out.
     - May not be able to print the hand all at once?
 
+
+Learning Point:
+- Added a conditional expression with another for loop to AddCards function that would minus 10 from the hand if the hand contained an ace and was greater than 21. An obstacle was to only change one ace at a time as needed and this portion of the code did this.
+- Moved code that was in main.go file to blackjack.go file under the EvaluateWinner function. It felt like this portion of code needed to be tested thoroughly so wrote a test and moved it to the blackjack.go file.
+
