@@ -40,13 +40,6 @@ EvaluateWinner Function:
 - Added another `and` statement to case three and four.
     - This prevents the player from winning when the player and dealer have a hand greater than 21.
 
-To-Do:
-- Computer can finish hand immediately.
-    - Print results in stages when revealing after player's hand.
-    - Will have to count the length of the `computerHand` slice to get an accurate print out.
-        - Evaluate length and have switch statement for each print out.
-    - May not be able to print the hand all at once?
-
 
 Learning Point:
 - Added a conditional expression with another for loop to AddCards function that would minus 10 from the hand if the hand contained an ace and was greater than 21. An obstacle was to only change one ace at a time as needed and this portion of the code did this.

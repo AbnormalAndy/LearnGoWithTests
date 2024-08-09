@@ -51,7 +51,7 @@ func main() {
 
 	playerHand = append(playerHand, blackjack.DealCard(deck))
 	// fmt.Println(playerHand)
-	fmt.Printf("YOUR hand: %v.\n", playerHand)
+	fmt.Printf("YOUR hand: %v.", playerHand)
 
 	playerSum := 0
 
