@@ -10,14 +10,6 @@
 - Cards are not removed from the deck as they are drawn.
 - The computer is the dealer.
 
-To-Do:
-- Deal card to dealer then player.
-- Deal another card to dealer then player.
-- Dealer's second card is hidden.
-- Dealer must be delt another card if hand total is less than 17.
-- Player sees current total.
-- Player may ask for another card.
-- Ace will count as 11 until score is greater than 21 where it will then count as 1.
 
 Win Condition:
 - Player score higher than dealer score.
