@@ -20,6 +20,7 @@ func main() {
 
 	deck := [13]int{11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10}
 
+
 	var dealerHand []int
 	
 	dealerHand = append(dealerHand, blackjack.DealCard(deck))
@@ -27,7 +28,6 @@ func main() {
 
 	dealerHand = append(dealerHand, blackjack.DealCard(deck))
 	// fmt.Println(dealerHand)
-	// TO-DO: Reveal only first number from the hand.
 	fmt.Printf("DEALER hand: %d and X.\n\n", dealerHand[0])
 
 	dealerSum := 0
