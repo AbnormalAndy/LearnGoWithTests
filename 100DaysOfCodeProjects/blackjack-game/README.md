@@ -23,7 +23,6 @@ Lose Condition:
 
 AddCards Function:
 - Created a function that, if the sum was greater than 21, would evaluated the hand and, if card was an eleven and sum was greater than 21, would minus ten from the sum.
-    - Will have to test this further with the test cases.
 
 DealCard Function:
 - Not sure how to test the randomness of this function. Not sure if the randomness should be tested. Instead, evaluated intake of a deck size of 13 (an array) and returning an integer.
