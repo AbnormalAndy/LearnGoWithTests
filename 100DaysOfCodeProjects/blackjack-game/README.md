@@ -1,6 +1,6 @@
 # Blackjack
 
-Game:
+## Game:
 - The deck is unlimited in size.
 - There are no jokers.
 - The Jack/Queen/King all count as 10.
@@ -12,11 +12,11 @@ Game:
 - The computer is the dealer.
 
 
-Win Condition:
+## Win Condition:
 - Player score higher than dealer score.
 - Player score is 21.
 
-Lose Condition:
+## Lose Condition:
 - Player score is greater than 21.
 - Player score is less than dealer score.
 
