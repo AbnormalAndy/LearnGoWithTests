@@ -7,5 +7,4 @@
 - Display if the guessed number is higher or lower than the random number.
 
 TO-DO:
-- Make test and function for evaluating if number is higher or lower.
-
+- Begin main.go file.

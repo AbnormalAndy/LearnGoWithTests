@@ -61,3 +61,4 @@ func TestEvaluateIfEqual(t *testing.T) {
 		}
 	}
 }
+

@@ -20,3 +20,4 @@ func EvaluateIfEqual(randomNumber, playerGuess int) bool {
 	}
 	return false
 }
+
