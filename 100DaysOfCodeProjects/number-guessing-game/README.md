@@ -6,6 +6,7 @@
     - Hard difficulty has 5 guesses.
 - Display if the guessed number is higher or lower than the random number.
 
+
 TO-DO:
 - Begin main.go file.
     - Ask for number.
