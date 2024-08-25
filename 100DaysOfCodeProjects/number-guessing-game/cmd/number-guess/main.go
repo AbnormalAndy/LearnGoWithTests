@@ -20,7 +20,7 @@ func main() {
 	difficulty = strings.TrimSuffix(difficulty, "\n")
 	difficulty = strings.ToLower(difficulty)
 	
-	// May have to make this a switch.
+	// May have to make this a switch.false
 	if difficulty == "easy" || difficulty == "e" {
 		fmt.Println("\nYou have 10 attempts to guess the number.\n")
 	}
@@ -31,8 +31,8 @@ func main() {
 
 	fmt.Println(difficulty)
 
-	randomNumber := 10
-	playerNumber := 5
+	randomNumber := 13
+	playerNumber := 7
 	fmt.Println(numberguessinggame.EvaluateIfLower(randomNumber, playerNumber))
 }
 
