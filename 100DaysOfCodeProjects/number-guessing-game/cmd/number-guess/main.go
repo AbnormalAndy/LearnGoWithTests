@@ -31,8 +31,8 @@ func main() {
 
 	fmt.Println(difficulty)
 
-	randomNumber := 13
-	playerNumber := 7
+	randomNumber := 10
+	playerNumber := 5
 	fmt.Println(numberguessinggame.EvaluateIfLower(randomNumber, playerNumber))
 }
 
