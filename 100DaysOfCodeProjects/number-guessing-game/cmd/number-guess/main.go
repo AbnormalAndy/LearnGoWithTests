@@ -31,6 +31,7 @@ func main() {
 
 	fmt.Println(difficulty)
 
+	// Add a for loop to keep guessing.
 	randomNumber := 10
 	playerNumber := 5
 	fmt.Println(numberguessinggame.EvaluateIfLower(randomNumber, playerNumber))
