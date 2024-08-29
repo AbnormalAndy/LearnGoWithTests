@@ -9,7 +9,6 @@
 
 TO-DO:
 - Begin main.go file.
-    - Ask for number.
     - Conditional expression for winning / losing.
     - For loop to continue playing until a win or a loss.
 
