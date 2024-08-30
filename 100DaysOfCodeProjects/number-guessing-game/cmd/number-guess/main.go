@@ -9,10 +9,13 @@ import (
 )
 
 func main() {
+
 	var difficulty string
+
 
 	fmt.Println("\nWelcome to the Number Guessing Game!\n")
 	fmt.Println("I am thinking of a number between 1 and 100.\n")
+	
 		
 	numberOfGuesses := 0
 	finishDifficultyInput := false
@@ -40,6 +43,7 @@ func main() {
 		}
 	}
 
+
 	finishGame := false
 
 	for finishGame != true {
@@ -49,8 +53,8 @@ func main() {
 		fmt.Println(numberOfGuesses)
 
 		// Add a for loop to keep guessing.
-		randomNumber := 10
-		playerNumber := 5
+		randomNumber := 13
+		playerNumber := 7
 		fmt.Println(numberguessinggame.EvaluateIfLower(randomNumber, playerNumber))
 		finishGame = true
 	}
