@@ -53,8 +53,8 @@ func main() {
 		fmt.Println(numberOfGuesses)
 
 		// Add a for loop to keep guessing.
-		randomNumber := 13
-		playerNumber := 7
+		randomNumber := 10
+		playerNumber := 5
 		fmt.Println(numberguessinggame.EvaluateIfLower(randomNumber, playerNumber))
 		finishGame = true
 	}
