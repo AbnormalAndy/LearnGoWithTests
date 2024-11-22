@@ -6,14 +6,20 @@ import (
 )
 
 func main() {
-	var helloworld	string
-	var helloyou	string
+	var helloworld string
+	var helloenglish string
+	var hellospanish string
+	var hellofrench string
 
 
-	helloworld = hello_world.HelloWorld()
-	helloyou = hello_world.HelloYou("curious cake")
+	helloworld = hello_world.Hello("", "")
+	helloenglish = hello_world.Hello("awesome apple", "")
+	hellospanish = hello_world.Hello("brave banana", "spanish")
+	hellofrench = hello_world.Hello("curious cake", "french")
 
 
 	fmt.Println(helloworld)
-	fmt.Println(helloyou)
+	fmt.Println(helloenglish)
+	fmt.Println(hellospanish)
+	fmt.Println(hellofrench)
 }
