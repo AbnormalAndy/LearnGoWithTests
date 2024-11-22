@@ -10,6 +10,16 @@ func TestHelloWorld(t *testing.T) {
 	got := hello_world.HelloWorld()
 	
 	if want != got {
-		t.Errorf("Want %s; Got %s.", want, got)
+		t.Errorf("Want %q; Got %q.", want, got)
+	}
+}
+
+
+func TestHelloYou(t *testing.T) {
+	want := "Hello, Meowth!"
+	got := hello_world.HelloYou("meowth")
+
+	if want != got {
+		t. Errorf("Want %q; Got %q.", want, got)
 	}
 }

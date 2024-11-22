@@ -6,11 +6,14 @@ import (
 )
 
 func main() {
-	var hello string
+	var helloworld	string
+	var helloyou	string
 
 
-	hello = hello_world.HelloWorld()
+	helloworld = hello_world.HelloWorld()
+	helloyou = hello_world.HelloYou("curious cake")
 
 
-	fmt.Println(hello)
+	fmt.Println(helloworld)
+	fmt.Println(helloyou)
 }
