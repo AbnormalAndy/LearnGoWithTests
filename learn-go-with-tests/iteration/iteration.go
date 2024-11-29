@@ -1,11 +1,9 @@
 package iteration
 
 
-const repeatedCount = 5
-
-func Repeat(letter string) string {
+func Repeat(letter string, number int) string {
 	repeated := ""
-	for i := 0; i < repeatedCount; i++ {
+	for i := 0; i < number; i++ {
 		repeated += letter
 	}
 	return repeated
